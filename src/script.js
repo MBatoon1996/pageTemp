@@ -21,3 +21,33 @@ const Footer = () => {
         </div>
     )
 }
+
+const Template = (props) => {
+    return (
+        <React.Fragment>
+            <Navbar />
+            <div className="container py-4">
+                <div className="row">
+                    <div className="col-12 col-md-9">
+                        {props.children}
+                    </div>
+                    <Sidebar />
+                </div>
+            </div>
+            <Footer />
+        </React.Fragment>
+    )
+}
+
+const App = () => {
+    return (
+        <Template>
+            <h1>Main content</h1>
+        </Template>
+    );
+}
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
