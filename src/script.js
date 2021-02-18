@@ -13,3 +13,11 @@ const Sidebar = () => {
         </div>
     )
 }
+
+const Footer = () => {
+    return (
+        <div className="border-top p-2">
+            Template Demo © 2021
+        </div>
+    )
+}
